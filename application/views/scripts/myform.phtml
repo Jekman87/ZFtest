@@ -1,0 +1,19 @@
+<form action="<?php echo $this->element->getAction(); ?>" method="<?php echo $this->element->getMethod(); ?>">
+
+<fieldset>
+    <legend>Data</legend>
+
+    <p>Fullname:</p>
+    <p><?php echo $this->element->text; ?></p>
+
+    <?php foreach ($this->element->text->getMessages() as $msg): ?>
+        <p><?php echo $msg; ?></p>
+    <?php endforeach; ?>
+
+    <p>Choose:</p>
+    <p><?php echo $this->element->multiCheckbox; ?></p>
+
+    <p><?php echo $this->element->submit; ?></p>
+</fieldset>
+
+</form>

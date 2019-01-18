@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<navigation>
+    <nav>
+        <home>
+            <label>Главная</label>
+            <controller>index</controller>
+            <action>index</action>
+        </home>
+
+        <articles>
+            <label>Статьи</label>
+            <controller>articles</controller>
+            <action>index</action>
+            <pages>
+                <add>
+                    <label>Добавление статьи</label>
+                    <controller>articles</controller>
+                    <action>add</action>
+                </add>
+                <edit>
+                    <label>Редактирование статьи</label>
+                    <controller>articles</controller>
+                    <action>edit</action>
+                    <visible>0</visible>
+                </edit>
+                <delete>
+                    <label>Удаление статьи</label>
+                    <controller>articles</controller>
+                    <action>delete</action>
+                    <visible>0</visible>
+                </delete>
+            </pages>
+        </articles>
+
+        <tutorials>
+            <label>Уроки</label>
+            <controller>tutorials</controller>
+            <action>index</action>
+            <pages>
+                <html>
+                    <label>HTML/CSS</label>
+                    <controller>tutorials</controller>
+                    <action>html</action>
+                </html>
+                <javascript>
+                    <label>jQuery/JavaScript</label>
+                    <controller>tutorials</controller>
+                    <action>javascript</action>
+                </javascript>
+                <php>
+                    <label>PHP/Zend Framework</label>
+                    <controller>tutorials</controller>
+                    <action>php</action>
+                    <pages>
+                        <php>
+                            <label>PHP</label>
+                            <controller>tutorials</controller>
+                            <action>php</action>
+                        </php>
+                        <zf>
+                            <label>Zend Framework</label>
+                            <controller>tutorials</controller>
+                            <action>zf</action>
+                        </zf>
+                    </pages>
+                </php>
+            </pages>
+        </tutorials>
+    </nav>
+</navigation>
+
+
